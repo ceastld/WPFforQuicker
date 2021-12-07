@@ -103,6 +103,9 @@
     <Compile Include="Tutorial\GetStart\CustomWindow1.xaml.cs">
       <DependentUpon>CustomWindow1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Tutorial\SubExample\Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -116,6 +119,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Tutorial\GetStart\CustomWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tutorial\SubExample\Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

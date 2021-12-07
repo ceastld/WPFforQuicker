@@ -1,0 +1,28 @@
+﻿<Window
+    x:Class="WPFforQuicker.Tutorial.SubExample.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPFforQuicker.Tutorial.SubExample"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:qk="https://getquicker.net"
+    Title="Window1"
+    Width="500"
+    Height="300"
+    mc:Ignorable="d">
+    <Grid Margin="50">
+        <TextBox
+            Name="TheTextBox"
+            VerticalContentAlignment="Top"
+            AcceptsReturn="True"
+            AcceptsTab="True"
+            Text="sefsefseaaaa"
+            TextWrapping="Wrap" />
+        <Button
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            qk:Att.Action="{Binding ElementName=TheTextBox, Path=Text, StringFormat='operation=copy&amp;data={0}'}">
+            复制文本
+        </Button>
+    </Grid>
+</Window>
